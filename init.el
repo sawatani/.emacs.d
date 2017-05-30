@@ -28,3 +28,7 @@
 
 (require 'my-neotree)
 (require 'my-haskell)
+
+(require 'whitespace)
+(setq whitespace-style '(face empty tabs lines-tail trailing))
+(global-whitespace-mode t)
