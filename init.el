@@ -16,9 +16,11 @@
 (el-get-bundle company-ghc)
 (el-get-bundle neotree)
 (el-get-bundle projectile)
+(el-get-bundle evil-magit)
 
 (require 'evil)
 (evil-mode 1)
+(require 'evil-magit)
 
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
