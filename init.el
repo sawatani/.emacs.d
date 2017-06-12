@@ -20,6 +20,7 @@
 (require 'evil)
 (evil-mode 1)
 (require 'evil-magit)
+(global-set-key (kbd "C-x g") 'magit-status)
 
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
