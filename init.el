@@ -24,13 +24,13 @@
 
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
+(require 'whitespace)
+(setq whitespace-style '(face empty tabs lines-tail trailing))
+(global-whitespace-mode t)
+
 (global-company-mode 1)
 
 (add-to-list 'load-path ".emacs.d/init.d")
 
 (require 'my-neotree)
 (require 'my-haskell)
-
-(require 'whitespace)
-(setq whitespace-style '(face empty tabs lines-tail trailing))
-(global-whitespace-mode t)
