@@ -22,6 +22,12 @@
 
 (add-to-list 'company-backends 'company-ghc)
 
+(add-hook 'haskell-mode-hook
+          (lambda ()
+            (set (make-local-variable 'company-backends)
+                 (append '((company-capf company-dabbrev-code))
+                         company-backends))))
+
 (custom-set-variables '(haskell-stylish-on-save t))
 
 (provide 'my-haskell)
