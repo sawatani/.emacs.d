@@ -12,7 +12,6 @@
 (el-get-bundle evil)
 (el-get-bundle flycheck)
 (el-get-bundle haskell-mode)
-(el-get-bundle company)
 (el-get-bundle company-ghc)
 (el-get-bundle neotree)
 (el-get-bundle projectile)
