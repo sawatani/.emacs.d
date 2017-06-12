@@ -22,4 +22,6 @@
 
 (add-to-list 'company-backends 'company-ghc)
 
+(custom-set-variables '(haskell-stylish-on-save t))
+
 (provide 'my-haskell)
