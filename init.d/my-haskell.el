@@ -6,6 +6,7 @@
 (add-hook 'haskell-mode-hook 'interactive-haskell-mode)
 (add-hook 'haskell-mode-hook 'haskell-decl-scan-mode)
 (add-hook 'haskell-mode-hook 'haskell-doc-mode)
+(add-hook 'haskell-mode-hook 'turn-on-haskell-unicode-input-method)
 ;; (add-hook 'haskell-mode-hook 'view-mode)
 
 (setq haskell-process-type 'stack-ghci)
