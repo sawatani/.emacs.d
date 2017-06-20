@@ -11,8 +11,10 @@
 (setq haskell-process-path-ghci "stack")
 (setq haskell-process-args-ghci "ghci")
 (setq haskell-compile-cabal-build-command "stack build")
-(eval-after-load "haskell-mode"
-    '(define-key haskell-mode-map (kbd "C-c C-c") 'haskell-compile))
+(eval-after-load 'haskell-mode
+  '(progn
+     (define-key haskell-mode-map (kbd "C-c .") 'haskell-mode-jump-to-def)
+     (define-key haskell-mode-map (kbd "C-c C-c") 'haskell-compile)))
 
 (add-to-list 'auto-mode-alist '("\\.hs$" . haskell-mode))
 (add-to-list 'auto-mode-alist '("\\.lhs$" . literate-haskell-mode))
