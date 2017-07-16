@@ -15,12 +15,11 @@
 (el-get-bundle company-ghc)
 (el-get-bundle neotree)
 (el-get-bundle projectile)
+(el-get-bundle magit-gitflow)
 (el-get-bundle evil-magit)
 
 (require 'evil)
 (evil-mode 1)
-(require 'evil-magit)
-(global-set-key (kbd "C-x g") 'magit-status)
 
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
@@ -34,3 +33,4 @@
 
 (require 'my-neotree)
 (require 'my-haskell)
+(require 'my-magit)
