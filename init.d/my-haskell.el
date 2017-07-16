@@ -15,6 +15,8 @@
   '(progn
      (define-key haskell-mode-map (kbd "C-c .") 'haskell-mode-jump-to-def)
      (define-key haskell-mode-map (kbd "C-c C-c") 'haskell-compile)))
+(custom-set-variables
+  '(haskell-interactive-popup-errors nil))
 
 (add-to-list 'auto-mode-alist '("\\.hs$" . haskell-mode))
 (add-to-list 'auto-mode-alist '("\\.lhs$" . literate-haskell-mode))
