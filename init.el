@@ -34,3 +34,4 @@
 (require 'my-neotree)
 (require 'my-haskell)
 (require 'my-magit)
+(require 'my-keybinds)
