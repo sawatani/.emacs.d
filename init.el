@@ -17,9 +17,12 @@
 (el-get-bundle projectile)
 (el-get-bundle magit-gitflow)
 (el-get-bundle evil-magit)
+(el-get-bundle yaml-mode)
 
 (require 'evil)
 (evil-mode 1)
+
+(require 'yaml-mode)
 
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
