@@ -18,6 +18,7 @@
 (el-get-bundle magit-gitflow)
 (el-get-bundle evil-magit)
 (el-get-bundle yaml-mode)
+(el-get-bundle ensime)
 
 (require 'evil)
 (evil-mode 1)
