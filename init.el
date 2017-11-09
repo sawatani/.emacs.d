@@ -29,6 +29,7 @@
 
 (require 'whitespace)
 (setq whitespace-style '(face empty tabs lines-tail trailing))
+(setq whitespace-line-column 120)
 (global-whitespace-mode t)
 
 (global-company-mode 1)
