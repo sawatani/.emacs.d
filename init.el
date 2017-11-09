@@ -35,6 +35,7 @@
 
 (add-to-list 'load-path ".emacs.d/init.d")
 
+(require 'my-ensime)
 (require 'my-neotree)
 (require 'my-haskell)
 (require 'my-magit)
