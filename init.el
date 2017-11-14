@@ -41,3 +41,4 @@
 (require 'my-haskell)
 (require 'my-magit)
 (require 'my-keybinds)
+(require 'my-window-resizer)

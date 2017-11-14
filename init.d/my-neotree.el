@@ -5,6 +5,7 @@
 (require 'find-file-in-project)
 
 (setq neo-smart-open t)
+(setq neo-window-fixed-size nil)
 
 (defun neotree-copy-file ()
   (interactive)
