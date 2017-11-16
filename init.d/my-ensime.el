@@ -1,5 +1,5 @@
 (eval-after-load "ensime-mode"
-  (ensime)
+  (if (file-exists-p "build.sbt") (ensime))
 )
 (defun my-ensime-mode-hook ()
   (evil-define-key 'normal ensime-mode-map (kbd "g d") 'ensime-edit-definition)
